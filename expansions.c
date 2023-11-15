@@ -1,10 +1,13 @@
 #include "shell.h"
 
 /**
- * expand_variables - expand variables
- * @data: a pointer to a struct of the program's data
+ * expand_variables - Expands variables in the input line.
+ * @data: A pointer to the struct containing the program's data.
  *
- * Return: nothing, but sets errno.
+ * This function modifies the input line by expanding variables.
+ * It looks for specific patterns like "$?", "$$", and "$VAR" and replaces them
+ * with the corresponding values, such as the exit status, process ID, or
+ * environment variable value..
  */
 void expand_variables(data_of_program *data)
 {
@@ -51,10 +54,13 @@ void expand_variables(data_of_program *data)
 }
 
 /**
- * expand_alias - expans aliases
- * @data: a pointer to a struct of the program's data
+ /**
+ * expand_alias - Expands aliases in the input line.
+ * @data: A pointer to the struct containing the program's data.
  *
- * Return: nothing, but sets errno.
+ * This function modifies the input line by expanding aliases. It looks for
+ * alias patterns in the input line and replaces them with their corresponding
+ * values.
  */
 void expand_alias(data_of_program *data)
 {
@@ -93,10 +99,10 @@ void expand_alias(data_of_program *data)
 }
 
 /**
- * buffer_add - append string at end of the buffer
- * @buffer: buffer to be filled
- * @str_to_add: string to be copied in the buffer
- * Return: nothing, but sets errno.
+ * buffer_add - Appends a string at the end of the buffer.
+ * @buffer: The buffer to be filled.
+ * @str_to_add: The string to be copied into the buffer.
+ * Return: The length of the resulting buffer.
  */
 int buffer_add(char *buffer, char *str_to_add)
 {
