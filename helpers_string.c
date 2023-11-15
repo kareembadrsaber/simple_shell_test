@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * str_length - returns the length of a string.
+ * str_length.
  * @string: pointer to string.
  * Return: length of string.
  */
@@ -19,7 +19,7 @@ int str_length(char *string)
 }
 
 /**
- * str_duplicate - duplicates an string
+ * str_duplicate 
  * @string: String to be copied
  * Return: pointer to the array
  */
@@ -51,10 +51,10 @@ char *str_duplicate(char *string)
 
 /**
  * str_compare - Compare two strings
- * @string1: String one, or the shorter
- * @string2: String two, or the longer
- * @number: number of characters to be compared, 0 if infinite
- * Return: 1 if the strings are equals,0 if the strings are different
+ * @string1: String 1
+ * @string2: String 2
+ * @number: number of characters to be compared
+ * Return: 1 if the strings are equals
  */
 int str_compare(char *string1, char *string2, int number)
 {
@@ -89,9 +89,9 @@ int str_compare(char *string1, char *string2, int number)
 }
 
 /**
- * str_concat - concatenates two strings.
- * @string1: String to be concatenated
- * @string2: String to be concatenated
+ * str_concat 
+ * @string1: String1 to be concatenated
+ * @string2: String2 to be concatenated
  *
  * Return: pointer to the array
  */
@@ -134,7 +134,7 @@ char *str_concat(char *string1, char *string2)
 
 
 /**
- * str_reverse - reverses a string.
+ * str_reverse 
  *
  * @string: pointer to string.
  * Return: void.
