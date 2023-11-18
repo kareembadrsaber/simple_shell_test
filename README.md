@@ -1,6 +1,8 @@
-			Simple Shell Project
-Project Group : Gamel Nashaat, Kareem Abdelkader
+project:0x16. C - Simple Shell
 
+score:180%
+
+Project Group : Gamel Nashaat, Kareem Abdelkader
 
 Who designed and implemented the original Unix operating system
 Who wrote the first version of the UNIX shell
